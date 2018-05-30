@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+  <div class="form-group">
+    <label for="title">
+      Titre du post
+    </label>
+    <input type="text" id="title" class="form-control" name="title" ngModel>
+  </div>
+
+  <div class="form-group">
+    <label for="content">
+      Contenu du post
+    </label>
+    <textarea name="content" id="content" class="form-control" ngModel></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Enregistrer</button>
+
+</form>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Post from '../classes/post';
+import Post from './models/Post.model';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,6 @@ export class AppComponent {
   posts: Array<Post>;
 
   constructor() {
-      this.posts = [];
-      this.posts.push(new Post('Mon premier post'));
-      this.posts.push(new Post('Mon deuxième post'));
-      this.posts.push(new Post('Encore un post'));
   }
 }
 
